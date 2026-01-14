@@ -22,9 +22,10 @@ where equipeXXX is the name of the usb key and lmXXX is the name of the robot
 
 ## Validation
 
-To ensure that the usb key has correctly been copied, you can run the ros2 command :
+To ensure that the usb key has correctly been copied, reboot the robot, connect to the robot with the user credential equipeXXX and run the following commands :
 
 ```bash
+sudo chmod 666 /dev/ttyTHS1
 ros2 launch limo_bringup limo_start.launch.py
 ```
 
